@@ -1,0 +1,100 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    color:white;
+    background-image: url(imagenes/background.jpg);
+}
+#Header{
+    font-size: 20px;    
+}
+hr{
+    border-style: none;
+}
+h1{
+    background-image: url(imagenes/background.jpg);
+    font-size:50px;
+    color: blue;
+    text-align: center;
+    margin-left: 30px;
+}
+h2{
+    font-size:35px;
+    color:#E88C0C;
+    margin: 30px 30px;
+}
+h3{
+    font-size: 30px;
+    color:red;
+    margin-left: 30px;
+}
+h4{
+    font-size: 25px;
+    color: #FF095A;
+    margin-left: 30px;
+}
+
+a{
+    text-decoration: underline;
+    color:#E88C0C;    
+}
+#network-link{
+    margin-left: 40px;
+}
+p{
+    width: 60%;
+    text-align: justify;
+    margin: 0px 300px 20px 300px;
+}
+#principal{
+    text-align: justify;
+    width: 90%;
+    margin-left: 35px;
+}
+ul, ol{
+    list-style-type: none;
+}
+.javascript{
+   margin-left: 70px;
+   width: 90%;
+   text-align: justify;
+}
+#Sugerencias{
+    border: 2px dashed black;
+    color: white;
+    display: block;
+    line-height: 35px;
+    padding: 5px 5px;
+    width: 16%;     
+}
+#Pie{
+    background-color: black;
+    height: 50px;  
+    padding: 5px;
+    margin: 0px;
+    border:40px;
+}
+#Pie a{
+    color: white;
+    font-size:16px;
+    margin:42px;
+    text-decoration: none;
+}
+.profile{
+
+    width: 60%;
+    text-align: justify;
+    margin-left: 300px;
+}
+ol.skills>li{
+    display:inline;  
+    margin: 40px 40px 40px 0px; 
+}
+ol.skills{
+    padding: 0px;
+}
+#subtitle{
+   text-align: center;
+   margin-left: 300px;
+   margin-right: 300px;
+   width: 60%;
+}

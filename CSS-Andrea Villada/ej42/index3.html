@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create your Google Account</title>
+        <style type="text/css">
+            body{
+                color:black;
+                background-color:#f1f1f1;
+                font-size:20px;
+            }
+            fieldset{
+                border: none;       
+            }
+            label{
+                font-weight: bold;
+                margin: 20px;       
+            }
+            .name{
+                width: 196px;
+            }
+            input{
+                font-size: 16px;
+                color:#999;
+                line-height: 30px;
+                width: 410px;
+                margin: 3px;
+                padding-left: 5px;
+            }
+            .month{
+                font-weight: bold;
+                width:180px;
+                height: 35px;
+                padding-left: 5px;
+            }
+            .day{
+                width: 80px;
+                margin-left: 7px;
+                padding-left: 5px;     
+            }
+            .year{
+                width: 125px;
+                padding-left: 5px;
+            }
+            .gender{
+                margin: 3px;
+                width: 417px;
+                height: 35px;
+                background-color: transparent;
+                font-weight: bold;
+                padding-left: 5px;
+            }
+            .mobile{
+                margin: 3px;
+                width: 417px;
+                height: 35px;
+                font-weight: bold;
+            }
+            .location{
+                background-color:transparent;
+                font-weight: bold;
+                font-size: 14px;
+                width: 420px;
+                height: 35px; 
+                padding-left: 5px;   
+            }
+            .next{
+                background-color:#4d90fe;
+                color: white;
+                font-weight: bold;
+                font-size:17px;
+                width: 100px;
+                margin: 2px 0px 0px 340px;
+                padding: 8px;
+                border-radius: 5px;
+                border-color:#4d90fe;
+                text-align: center;        
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="idname">Name</label>
+                <fieldset>
+                    <input class="name" type="text" name="First" placeholder="First" id="idname"/>
+                    <input class="name" type="text" name="Last" placeholder="Last"/>
+                </fieldset>
+            <label for="idusername">Choose your usenarme</label>
+                <fieldset>
+                    <input type="email" name="email" placeholder="@gmail" id="idusername"/>
+                </fieldset>
+            <label for="idpassword">Create a password</label>
+                <fieldset>
+                    <input type="password" name="password" id="idpassword"/>
+                </fieldset>
+            <label for="idconfirm">Confirm your password</label>
+                <fieldset>
+                    <input type="password" name="password" id="idconfirm"/>
+                </fieldset>
+            <label>Birthday</label>
+                <fieldset>
+                    <select class="month" name="Month">
+                        <option value="Month">Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <input class="day" type="text" name="Day" placeholder="Day" size=2/>
+                        <input class="year" type="text" name="Year" placeholder="Year" size=6/>
+                </fieldset>
+            <label>Gender</label>
+                <fieldset>
+                    <select class="gender" name="Gender">
+                        <option value"I-am">I am...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </fieldset>
+            <label>Mobile Phone</label>
+                <fieldset>
+                    <select class="mobile" name="Mobile Phone">
+                        <option value="+54">+54</option>
+                        <option value="+57">+57</option>
+                    </select>
+                </fieldset>
+            <label for="idemail">Your current email address</label>
+                <fieldset>
+                    <input type="email" name="email" id="idemail" />
+                </fieldset>
+            <label>Location</label>
+                <fieldset>
+                    <select class="location" name="Location">
+                        <option value="arg">Argentina</option>
+                        <option value="col">Colombia</option>
+                    </select>
+                </fieldset>
+            <input class="next" type="submit" value="Next step"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Twitter</title>
+        <style type="text/css"> 
+            body{
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                color:gray;
+            }
+            .user{
+                font-size: 18px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 5px;
+                border-color: #edeeef;
+                border-style:solid;
+                border-bottom-width: 2px;        
+            }
+            .password{
+                font-size: 18px;
+                padding: 10px;
+                border-radius:5px;
+                border-style:solid;
+                border-color: #edeeef;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+            .remember{
+                margin-top: 6px;
+                cursor: pointer;
+            }
+            .login{
+                font-size: 25px;
+                font-weight: bold;
+                background-color: white;
+                color: #00c3ff;
+                border-radius: 30px;
+                text-align: center;
+                border: 2px solid #00c3ff;   
+                width: 140px;
+                height: 55px;
+                cursor: pointer;
+            }
+            a.forgot{
+                color:#00c3ff;
+                text-decoration: none;
+            }   
+        </style>
+    </head>
+    <body>
+        <form>
+            <input class="user" type="text" name="login" placeholder="Phone, email or username" size="38"/>
+            <div>
+                <input class="password" type="password" name="password" placeholder="Password" size="30"/>
+                <input class="login" type="submit" value="Log in"/>
+            </div>
+            <input class="remember" type="checkbox" name="Remember me" value="Remember me" checked="checked"/> Remember me •
+            <a class="forgot" href="#"> Forgot password? </a>    
+        </form>   
+    </body>
+</html>
