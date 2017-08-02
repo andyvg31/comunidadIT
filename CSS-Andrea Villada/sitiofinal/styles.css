@@ -1,0 +1,296 @@
+body{
+    background-color: transparent;
+    background-image: url(imagenes/background.jpg);
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;  
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+article{
+    background-color: white;
+    width: 70%;
+    color:black;
+    padding: 30px;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+}
+h1{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#E74C3C;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color:#5DADE2;
+    text-align: left; 
+}
+h3 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+#video{
+     width: 100%;
+     
+}
+hr {
+    border: none;
+}
+a{
+    text-decoration: none;
+    
+    font-size: 16px;
+    
+}
+nav{
+     line-height: 50px;
+     text-align: center;
+     cursor: pointer;
+}
+nav a{
+   
+    color:#1B2631;  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 50px;
+    text-align: center; 
+    text-transform: uppercase;    
+}
+aside{
+    background-color: orange;
+    color: white;
+    float: none;
+    width: 250px;
+    height: 290px;
+    position: fixed;
+    left: 1000px;
+    top: 160px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 15px;
+    border-style: dotted;
+    margin-bottom: 20px;
+}
+aside ul, ol, li {
+    text-align: center;
+    padding-left: 0px;   
+    
+}
+aside h3{
+    text-align: center;
+}
+
+footer{
+    background-color:#E74C3C;
+    color:white;
+}
+footer a{
+    color: white;
+    text-decoration: none;    
+}
+footer ul, li{
+    list-style-type: none;
+}
+footer li{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+fieldset {
+    border:none;
+}
+.principal{
+    position:relative;
+    left: 70px;
+    width: 80%;
+}
+figure>figcaption{
+    text-align: center;
+}
+#comentarios{
+    background-color: #E74C3C;
+    color:white;
+    font-size: 25px;
+    width: 15%;
+    text-align: center;
+    padding: 1px 1px;
+}
+#idmessage{
+    width: 60%;
+    height: 40%;
+}
+.contact{
+    float: right;
+    width: 40%;
+    margin-bottom: 400px;    
+}
+.contact label{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+.contact h3{
+    color:white;
+    font-size: 22px;
+    text-align: center;
+    word-spacing: normal;
+    margin-left: 15px;
+    margin-right: 85px;
+}
+.contact input{
+    height: 20px;
+    width: 300px;
+    font-size: 14px;
+}
+.contact select{
+    height: 30px;
+}
+.contact .button{
+    width: 100px;
+    height: 50px;
+}
+.login{
+    color: black;
+    width: 300px;
+    height: 30px;
+}
+.index label{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+#name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 16px;
+    background-color: #2d65a1;
+    color: #eeeae6;
+    box-shadow: 0 0 black;
+    padding: 2px;
+}
+#remember{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#remember a{
+    text-decoration: none;
+  
+}
+.bienvenido{
+    float: right;
+    width: 30%;
+    margin-bottom: 100px;    
+}
+.bienvenido h2{
+    color:orangered;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: normal;
+    margin-left: 15px;
+    margin-right: 85px;
+}
+.button{
+    background-color:#2E4053;
+    color:white; 
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 4px;
+    line-height: 30px;
+    width: 100px;
+    margin-left: 18px;
+    margin-right: 18px; 
+    cursor: pointer;
+    border-color: transparent;
+}
+@media (max-width: 732px) {
+ main{
+    width: 100%;
+    margin: auto;
+ } 
+ article {
+     width: 90%;
+     padding: 10px;
+     margin: auto;
+ }
+ nav a {
+     margin: 0px;
+     margin-right: 10px;
+ }
+ footer {
+     width: 90%;
+     margin: auto;
+     padding-left: 4px;
+     padding-right: 4px;
+ }
+ footer li{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer ul {
+    padding-left: 0px;
+}
+aside{
+    
+    float: none;
+    width: 50%;
+    margin-left:10px; 
+    position: static;  
+}
+#comentarios{
+    width: 40%;
+}
+.principal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    left:initial;
+    position:static;
+}
+img{
+    max-width: 100%;
+}
+figure{
+    margin:0px;
+}
+.contact{
+    width: 100%;
+    float:none;
+    margin:0px;
+}
+.bienvenido{
+    width: 80%;
+    margin: auto;
+    float: none;
+}
+fieldset{
+    width: 50%;
+}
+.comparison-table{
+    width: 90%;
+}
+iframe{
+    width: 100%;
+}
+}
