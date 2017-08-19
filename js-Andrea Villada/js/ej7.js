@@ -1,0 +1,10 @@
+let nombre= 'andrea';
+let apellido= 'villada';
+let edad= 28;
+let fechaDeNacimiento= '31/07/1989';
+let direccion= 'pringles';
+console.log('nombre: ',nombre);
+console.log('apellido: ',apellido);
+console.log('edad:', edad);
+console.log('fechaDeNacimiento:', fechaDeNacimiento);
+console.log('direccion:', direccion);

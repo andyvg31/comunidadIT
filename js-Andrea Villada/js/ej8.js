@@ -1,0 +1,10 @@
+const nombre= 'andrea';
+const apellido= 'villada';
+const edad= 28;
+const fechaDeNacimiento= '31/07/1989';
+const direccion= 'pringles';
+console.log('nombre: ',nombre);
+console.log('apellido: ',apellido);
+console.log('edad:', edad);
+console.log('fechaDeNacimiento:', fechaDeNacimiento);
+console.log('direccion:', direccion);

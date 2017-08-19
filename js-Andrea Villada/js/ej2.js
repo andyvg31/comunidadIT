@@ -1,0 +1,11 @@
+var nombre;
+nombre= 'andrea';
+var apellido;
+apellido= 'villada';
+var edad;
+edad= 28;
+var fechaDeNacimiento;
+fechaDeNacimiento= '31/07/1989';
+var direccion;
+direccion= 'pringles';
+console.log(nombre);

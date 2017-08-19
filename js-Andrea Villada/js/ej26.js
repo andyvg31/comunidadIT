@@ -1,0 +1,18 @@
+let curso="JavaScript";
+let cantidadDeAlumnos=25;
+let presencial= true;
+let enLinea= false;
+let cantidadDeGraduados= undefined;
+let perdidaDeTiempo= null;
+console.log('curso', curso);
+console.log('cantidadDeAlumnos', cantidadDeAlumnos);
+console.log('presencial', presencial);
+console.log('enLinea', enLinea);
+console.log('cantidadDeGraduados', cantidadDeGraduados);
+console.log('perdidaDeTiempo',perdidaDeTiempo);
+console.log('curso', typeof curso);
+console.log('cantidadDeAlumnos', typeof cantidadDeAlumnos);
+console.log('presencial', typeof presencial);
+console.log('enLinea', typeof enLinea);
+console.log('cantidadDeGraduados', typeof cantidadDeGraduados);
+console.log('perdidaDeTiempo', typeof perdidaDeTiempo);

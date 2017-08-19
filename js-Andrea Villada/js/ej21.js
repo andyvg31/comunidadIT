@@ -1,0 +1,10 @@
+let edad= 28;
+let telefono= 20153056;
+let calle= 'Pringles';
+let altura= 580;
+let anios= `Tengo ${edad} años`;
+let contacto= `Mi teléfono es ${telefono}`;
+let direccion= `Vivo en la calle ${calle} a la altura ${altura}`;
+console.log(anios);
+console.log(contacto);
+console.log(direccion);

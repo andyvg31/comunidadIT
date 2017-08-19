@@ -1,0 +1,10 @@
+let nombre= 'Andrea';
+let apellido='Villada';
+console.log('Mi nombre es', nombre, 'y tiene', nombre.length, 'letras');
+console.log('Mi apellido es', apellido, 'y tiene', apellido.length, 'letras');
+nombre='Luna';
+apellido='Sánchez';
+let cantidadDeCaracteres=nombre.length;
+let cantidadDeCaracteres2=apellido.length;
+console.log(`Mi nombre es ${nombre} y tiene ${nombre.length} letras`);
+console.log(`Mi apellido es ${apellido} y tiene ${apellido.length} letras`);
