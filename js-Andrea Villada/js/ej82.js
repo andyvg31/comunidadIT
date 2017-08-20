@@ -7,7 +7,7 @@ do{
         asterisco+= '*';
         caracteres++
     }
-    while(caracteres <=linea);
+    while(caracteres < linea);
     console.log(asterisco);
     linea++;
 }

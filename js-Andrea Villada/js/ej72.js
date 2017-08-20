@@ -3,7 +3,7 @@ while(linea<=8){
     let caracteres=0;
     let asterisco='';
 
-    while(caracteres <=linea){
+    while(caracteres < linea){
         asterisco+= '*';
         caracteres++
     }

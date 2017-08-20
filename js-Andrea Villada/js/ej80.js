@@ -1,13 +1,11 @@
 let numero=0;
 let suma=0;
 do{
-    console.log( `${numero} numero.suma parcial: ${suma}`);
+    if(numero % 2 == 1){
+        console.log( `${numero} numero.suma parcial: ${suma}`);
+    }
     numero++;
-    suma=numero
-    console.log(suma);  
-    }
+    suma+=numero;
     
-while(numero<=1000){
-    if((numero<2)!==0){
-    }
-    }
+}
+while(numero<1000);

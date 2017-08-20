@@ -1,5 +1,5 @@
 let linea=13;
-while(linea>=1){
+while(linea>=0){
     let caracteres=0;
     let asteriscos='';
     
