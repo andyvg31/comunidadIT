@@ -1,19 +1,21 @@
 function obtenerPerimetroRectangulo(base, altura){
 
+    let perimetro=0
     if (base===altura){
-       console.log((2* altura) + (2*base)); 
+        perimetro= 4*base
     }
     else{
-        if(base!==altura){
-        console.log (2*(altura + base));
-        }
-     
+        perimetro= (2*(altura + base));
+    }   
+    
+    console.log(`El perímetro es ${perimetro}`);
+    if(perimetro>100){
+        console.log(`El perímetro es muy grande`);
     }
-        
+    else{
+        console.log(`Este perímetro no es muy grande`);
+    }
 }
 
-
-
-obtenerPerimetroRectangulo( 10, 20);
-console.log(obtenerPerimetroRectangulo( 50, 30));
-console.log(obtenerPerimetroRectangulo( 29, 35));
+obtenerPerimetroRectangulo(10,7);
+obtenerPerimetroRectangulo(5,7);

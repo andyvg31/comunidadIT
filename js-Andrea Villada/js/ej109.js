@@ -1,11 +1,11 @@
 function autenticarUsuario(usuario, password){
-    if((usuario='nacho') &&(password='Nerd1979')){
+    if(usuario==='nacho' && password==='Nerd1979'){
         return `Bienvenido ${usuario}, te estabamos esperando`;
     }
-    else if((usuario='pedro') &&(password='Batman0217')){
+    else if(usuario==='pedro' && password==='Batman0217'){
         return `Bienvenido ${usuario}, te estabamos esperando`;
     }
-    else if((usuario='martha') &&(password='Madre2312')){
+    else if(usuario==='martha' && password==='Madre2312'){
         return `Bienvenido ${usuario}, te estabamos esperando`;
     }
     
@@ -16,4 +16,4 @@ function autenticarUsuario(usuario, password){
             
 console.log(autenticarUsuario('nacho', 'Nerd1979'));
 console.log(autenticarUsuario('pedro', 'Batman0217'));
-console.log (autenticarUsuario('marta', 'Madre2312'));
+console.log (autenticarUsuario('martha', 'Madre2312'));
