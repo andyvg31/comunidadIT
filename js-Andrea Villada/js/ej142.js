@@ -9,5 +9,11 @@ let mutantes=[
     'Alexander Summers',
     'Suzanne Chan',
     'James "Logan" Howlett',
-    'Ororo Monroe'
-];
+    'Ororo Monroe',
+    ];
+
+    let mutantesString=mutantes.map(function(mutante){
+        return mutante.toString();
+    })
+    console.log(mutantesString);
+   

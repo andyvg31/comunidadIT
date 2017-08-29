@@ -12,8 +12,8 @@ let mutantes=[
     'Ororo Monroe'
 ];
 var nombreDelMutante=' ';
-if(mutantes.indexOf('Lorna Sally Dane')>-1){
-    
+for()
+     
 }
 else{
     console.log(nombreDelMutante);
