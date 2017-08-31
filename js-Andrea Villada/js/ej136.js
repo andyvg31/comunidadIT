@@ -16,4 +16,4 @@ let mutantes=[
 mutantes.forEach(function(mutante, indice){
     console.log(indice,mutante);
 });
-console.log()
+console.log();
