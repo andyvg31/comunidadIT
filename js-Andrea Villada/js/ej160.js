@@ -93,8 +93,9 @@ let juegos=[
     },
         
 ]
-juegos.forEach(function(juego, indice) {
-    console.log(juego[propiedades[indice]]);
-
+juegos.forEach(function(juego) {
+ propiedades.forEach(function(propiedad){
+    console.log(juego[propiedad]);
+    
+    });
 });
-
