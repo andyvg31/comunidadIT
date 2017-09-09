@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <script defer>
+        let milisegundos=0;
+        const tiempo= function(){
+            milisegundos++
+            alert(`Hace ${milisegundos} segundos que estas viendo este sitio`);
+        }
+        const id= setInterval(tiempo, 1000);
+        tiempo();
+        clearInterval(id);
+      
+    </script>
+        
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <script defer>
+       nombreDeUsuario= prompt('Ingrese su nombre de usuario');
+       password = prompt('Ingrese su contraseña');
+       alert(`Bienvenido ${nombreDeUsuario}`);
+       const mensaje= function(){
+           let confirmar= confirm('¿ Desea mantener su sesión ?');
+            if(confirmar){
+            alert(`${nombreDeUsuario} renovamos tu session`);
+        }
+        else{
+            alert(`${nombreDeUsuario} ha caducado su sesión por favor vuelva a ingresar`);
+        }
+        }
+        setTimeout(mensaje,10000);
+       
+    </script>
+        
+</head>
+<body>
+</body>
+</html>
