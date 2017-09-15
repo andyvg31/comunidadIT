@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload=function(){
+            const body=document.querySelector('body');
+            const list=document.createElement('ul');
+            let indice=0;
+            let ok;
+            do{
+                ok=confirm('¿Quiere ingresar un nombre?');
+                if(ok){
+                    const name=prompt('Ingrese un nombre');
+                    const item=document.createElement('li');
+                    item.textContent=name;
+                    if(indice%2===0){
+                        item.style.color= '#ddd';
+                    }
+                    else{
+                        item.style.color= '#eee';
+                    }
+                    indice++;
+                    list.appendChild(item);
+                }
+            }
+            while(ok);  
+            body.appendChild(list);
+        }
+           
+    </script>
+  <title>Todo ECMAScript Baby!!</title>
+</head>
+<body>
+</body>
+</html>

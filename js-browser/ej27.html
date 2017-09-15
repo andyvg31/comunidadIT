@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload=function(){
+            const body= document.querySelector('body');
+            let numeros=[];
+            for(numbers=0; numbers<=100; numbers++){
+            numeros.push(numbers);
+            }
+            const list=document.createElement('ul');
+            numeros.forEach(function(numero) {
+                element= document.createElement('li');
+                element.textContent=(`Item ${numero}`);
+                if(numero%2===0){
+                    element.style.color= '#ddd';
+                }
+                else{
+                    element.style.color=  '#eee';
+                }
+                list.appendChild(element);
+            });
+            body.appendChild(list);
+        }
+    </script>
+  <title>Todo ECMAScript Baby!!</title>
+</head>
+<body>
+</body>
+</html>

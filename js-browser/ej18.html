@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        window.onload=function(){
+        const element= document.querySelector('a'); 
+        if (element.hasAttribute('class')){
+          element.classList.add('azul');
+        }
+        else{
+          element.classList.add('rojo');
+        }
+        }
+    
+    </script>
   <title>Atributos</title>
   <style>
     a {
@@ -38,14 +50,5 @@
   <a href="#" class="menu">Link 3</a>
   <a href="#" class="menu">Link 4</a>
   <a href="#" class="menu">Link 5</a>
-  <script> 
-  window.onload=function(){
- 
-        const element= document.querySelector('a');
-        console.log(element);
-        const clase= element.getAttribute('class');
-        console.log(clase);
-   }
-    </script>
 </body>
 </html>

@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    window.onload= function(){
+      let choise= prompt('Ingrese un color (verde, azul, rojo)')
+        const element= document.querySelector('a');
+        switch (choise){
+          case 'verde': 
+          element= element.classList.add('verde');
+          break;
+          case 'azul':
+          element= element.classList.add('azul');
+          break;
+          case 'rojo':
+          element= element.classList.add('rojo');
+          break;
+          default:
+          element=null;
+  
+        }
+        console.log(element);
+    }
+  </script>
   <title>Atributos</title>
   <style>
     a {
@@ -39,8 +60,4 @@
   <a href="#" class="menu">Link 4</a>
   <a href="#" class="menu">Link 5</a>
 </body>
-<script>
-    let prompt('Ingrese un color (verde, azul, rojo)')
-
-</script>
 </html>

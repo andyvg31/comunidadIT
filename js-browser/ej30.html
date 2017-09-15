@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+          window.onload=function(){
+              var list=document.querySelector('ul');
+
+             for(index=list.children.length-1; index>=0; index--){
+                var element= list.children.item(index);
+                list.removeChild(element);
+                console.log(element)
+              } 
+          }
+      </script>
+    <title>Prductos</title>
+  </head>
+  <body>
+    <ul>
+      <li>Bananas</li>
+      <li>Manzanas</li>
+      <li>Peras</li>
+      <li>Huevos</li>
+      <li>Tomates</li>
+      <li>Lechuga</li>
+      <li>Leche</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <head>
+        <script defer>
+            let preferenciaUsuario= prompt('Ingrese la cantidad de segundos que quiere ver nuestro documento');
+            let milisegundos=0;
+            const tiempo= function(){
+                console.log(`Hace ${milisegundos} segundos que estas viendo este sitio`);   
+            }
+            milisegundos++
+            
+
+            const id= setInterval(tiempo, preferenciaUsuario);
+            tiempo();
+            clearInterval(id);
+            alert('ha caducado su sesión por favor vuelva a ingresar');
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -3,16 +3,22 @@
     <script defer>
        alert ('Vamos a sumar todos los números que Ud. ingrese');
        let suma=0;
+       let contador=0;
         do{
             let numero= prompt('Ingrese por favor un número');
             let textoComoNumero=parseInt(numero);
             suma+= textoComoNumero;
             console.log(suma);
+            contador++;
+
+            
         
             
         }
         
-        while (confirm('¿ Quiere ingresar otro número ?'));  
+        while (confirm('¿ Quiere ingresar otro número ?'));
+       contador= suma/contador;  
+       console.log(contador);
     </script>
         
 </head>

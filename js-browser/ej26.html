@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload=function(){
+            let body= document.querySelector('body');
+            let nombres=['Andy','Juli','Cami','Juan','Mari','Jose','Sebas', 'Luna','Sophie','Carlos'];
+            let list= document.createElement('ul');
+        
+    
+            nombres.forEach(function(nombre) {
+                element= document.createElement('li');
+                element.textContent=nombre;
+                list.appendChild(element);
+                            
+            });
+            body.appendChild(list);      
+        }
+    </script>
+  <title>Todo ECMAScript Baby!!</title>
+</head>
+<body>
+</body>
+</html>
