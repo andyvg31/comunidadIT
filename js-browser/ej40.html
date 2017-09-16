@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        window.onload=function(){
+            /*function clickHandler(){
+                alert('Hiciste click en un botón controlado con addEventListener');
+            }
+            const primerBoton=document.getElementById('primer-boton');
+            primerBoton.addEventListener('click',clickHandler);
+            primerBoton.addEventListener('click',saludar);*/
+
+            function doubleClick(){
+                alert('Doble click!!!');
+            }
+            const primerBoton=document.getElementById('primer-boton');
+            //primerBoton.addEventListener('dblclick', doubleClick); 
+            primerBoton.ondblclick = function() {
+                alert('Doble click!!!');
+            };
+            
+            const segundoBoton=document.getElementById('segundo-boton');
+            function saludar(){
+                segundoBoton.onclick=function(){
+                primerBoton.removeEventListener('click', clickHandler);
+                }
+            }
+            const link= document.querySelector('a');
+            link.addEventListener('click', function(toPrevent){
+                toPrevent.preventDefault();
+                alert('Este hipervínculo no navega a ningún lado!!!');
+            });
+
+            function mouseOver(){
+                alert('Mouse sobre el hipervinculo');
+            }
+            link.addEventListener('mouseover', mouseOver);
+
+            function mouseOut(){
+                alert('Mouse salió del hipervinculo');
+            }
+            link.addEventListener('mouseout', mouseOut);
+
+            const html=document.querySelector('html');
+            html.addEventListener('click', function(event){
+                event.clientX;
+                event.clientY;
+                console.log (`x: ${event.clientX}, y: ${event.clientY}`);
+
+            html.addEventListener('keypress', function(otherEvent){
+                const code= otherEvent.charCode;
+                const codeValue= String.fromCharCode(otherEvent.charCode);
+                console.log(`códido de letra: ${code}, letra: ${codeValue}`);
+    
+                const div= document.querySelector('div');
+                div.textContent+= `${codeValue}`;
+                div.style.fontSize= '20px';
+                div.style.color='red';
+                div.style.fontFamily='Arial';
+                div.style.paddingBottom= '20px';
+            });
+
+            });
+    
+            };
+    </script>
+    <title>Eventos</title>
+  </head>
+  <body>
+    <ul></ul>
+    <div>
+
+    </div>
+    <button id="primer-boton">Haceme Click!!</button>
+    <button id="segundo-boton">Sacar handler</button>
+    <a href="http://google.com">Hipervinculo controlado por ECMAScript</a>
+  </body>
+</html>

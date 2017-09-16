@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Calendario</title>
+    <style>
+        .tachado{
+            text-decoration: line-through;
+        };
+        li{
+            cursor: pointer;
+        };
+    </style>
+    <script>
+            window.onload=function(){
+            let list=document.createElement('ul');
+            let tareas=['escribir', 'leer','estudiar','programar','cocinar', 'limpiar','compras','medico', 'entrenar', 'lavar']
+            
+            tareas.forEach(function(tarea){
+                const element= document.createElement('li');
+                element.textContent=tarea;
+                element.addEventListener('click', function(){
+                    element.classList.toggle('tachado');
+                })
+                list.appendChild(element);   
+            });
+            const body=document.querySelector('body');
+            body.appendChild(list);
+            }
+            
+    </script>
+</head>
+<body>
+    <h1>Calendario de Tareas</h1>
+</body>
+</html>

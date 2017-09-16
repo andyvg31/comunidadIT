@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload=function(){
+            const form= document.querySelector('form');
+            let action= form.action;
+            let method= form.method;
+            let enctype= form.enctype;
+            let name= form.name;
+
+            const attributes=[
+                { nombre: 'action', valor: action },
+                { nombre: 'enctype', valor: enctype },
+                { nombre: 'method', valor: method },
+                { nombre: 'name', valor: name },
+            ];
+
+            const list= document.createElement('ul');
+            attributes.forEach(function(attribute){
+                const item= document.createElement('li');
+                item.innerHTML = `<span class="negrita">nombre:</span> ${attribute.nombre}, <span class="negrita">valor:</span> ${attribute.valor}`;
+            list.appendChild(item);
+            })
+
+            let body=document.querySelector('body');
+            body.appendChild(list);
+        }
+    </script>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>
