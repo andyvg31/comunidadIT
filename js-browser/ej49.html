@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <style>
+        .error {
+          font-weight: bold;
+          color: blue;
+        }
+        .success {
+          font-weight: bold;
+          color: goldenrod;
+        }
+      </style>
+  <script>
+      window.onload= function(){
+          const form= document.querySelector('form');
+          const div= document.createElement('div');
+          div.setAttribute('id', 'message');
+          console.log(div.hasAttributes());
+          form.appendChild(div);
+
+          const username=document.getElementById('username');
+          const password=document.getElementById('pass');
+          const message= document.getElementById('message')
+          const finalMessage;
+          
+          form.onsubmit = function(event) {
+          event.preventDefault();
+        
+        message.innerHTML = '';
+        if (username.value === '' || password.value === '') {
+          finalMessage = '<p class="error">Por favor ingrese un nombre de usuario y password válidos</p>';
+        } else {
+          finalMessage= '<p class="success">Usuario Logeado</p>';
+        }
+        message.innerHTML = finalMessage;
+      }
+    }
+      
+  </script>
+
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>
