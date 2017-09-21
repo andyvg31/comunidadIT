@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio8.js",
+  "version": "1.0.0",
+  "main": "ej8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ej8.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
