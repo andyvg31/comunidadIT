@@ -1,8 +1,18 @@
 const express= require('express');
-var otherRouter= express.Router();
+var router= express.Router();
 
-otherRouter.all('/products', function(request, response){
-    response.send('Pagina: Products, método: all')
+router.get('/products', function(request, response){
+    response.send('Pagina: Products, método: get')
 });
 
-module.exports= otherRouter;
+router.post('/products', function(request, response){
+    response.send('Pagina: home, método: post')
+});
+router.delete('/products', function(request, response){
+    response.send('Pagina: Products, método: delete')
+});
+
+router.put('/products', function(request, response){
+    response.send('Pagina: home, método: put')
+});
+module.exports= router;
